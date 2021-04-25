@@ -3,4 +3,10 @@ spriteTypes = {
 		name = "GFX_McDonalds_Logo"
 		texturefile = "gfx/interface/mcdonalds.tga"		
 	}
+
+	spriteType = {
+		name = "GFX_Texticon_BigMac"
+		texturefile = "gfx/texticons/bigmac.tga"
+		legacy_lazy_load = no
+	}
 }

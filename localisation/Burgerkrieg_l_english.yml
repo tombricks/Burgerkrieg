@@ -1,0 +1,5 @@
+﻿l_english:
+ bigmac: "£Texticon_BigMac Big Mac"
+ small_fries: "Small Fries"
+ menu_tt: "[This.GetMenuItem]"
+ menu_tt_delayed: "[?Menu_Price^i] - [?Menu_Kcal^i] Kcal"

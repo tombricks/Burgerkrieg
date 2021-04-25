@@ -14,6 +14,17 @@ scripted_gui = {
 		effects = {
 			menu_entry_button_click = {
 				add_to_array = { Order = v }
+				add_to_variable = { Order_Price = Menu_Price^v }
+				add_to_variable = { Order_Kcal = Menu_Kcal^v }
+			}
+
+			order_entry_button_click = {
+				remove_from_array = {
+					array = Order
+					index = i
+				}
+				subtract_from_variable = { Order_Price = Menu_Price^v }
+				subtract_from_variable = { Order_Kcal = Menu_Kcal^v }
 			}
 		}
 
