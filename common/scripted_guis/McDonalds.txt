@@ -1,0 +1,37 @@
+scripted_gui = {
+
+	McDonalds_Scripted_Gui = {
+		context_type = player_context
+		window_name = "McDonalds_Window"
+
+		visible = {
+			always = yes
+		}
+
+		properties = {
+		}
+
+		effects = {
+			menu_entry_button_click = {
+				add_to_array = { Order = v }
+			}
+		}
+
+		dynamic_lists = {
+			menu_grid = {
+				array = Menu
+				entry_container = "menu_entry"
+				value = v
+				index = i
+			}
+			order_grid = {
+				array = Order
+				entry_container = "order_entry"
+				value = v
+				index = i
+			}
+		}
+	}
+	
+}
+

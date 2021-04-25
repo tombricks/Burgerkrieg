@@ -1,0 +1,24 @@
+defined_text = { 
+	name = GetMenuItem
+	text = {
+		trigger = {
+			check_variable = { v = 1 }
+		}
+		localization_key = "Burger"
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 2 }
+		}
+		localization_key = "Fries"
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 3 }
+		}
+		localization_key = "Drink"
+	}
+	text = {
+		localization_key = ""
+	}
+}

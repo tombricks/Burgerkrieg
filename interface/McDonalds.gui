@@ -1,0 +1,83 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "McDonalds_Window"
+		size = { width = 800 height = 600 }
+		position = { x=-400 y=-150 }
+		Orientation = center
+		moveable = yes
+		clipping = yes
+		
+		Background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window2_1b_border"
+		}
+
+		iconType ={
+			name ="McDonalds_Logo"
+			spriteType = "GFX_McDonalds_Logo"
+			position = { x = 16 y = 16 }
+			Orientation = "UPPER_LEFT"
+		}	
+
+		instantTextboxType = {
+			name = "McDonalds_Title"
+			position = { x = 160 y = 16 }
+			textureFile = ""
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "McDonalds"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+			
+		gridBoxType = {
+			name = "menu_grid"
+			position = { x = 16 y = 160 }
+			size = { width = 564 height = 500 }
+			slotsize = { width = 150 height = 40 }
+			format = "UPPER_LEFT"
+			max_slots_horizontal = 1
+			max_slots_vertical = 8
+		
+		}
+			
+		gridBoxType = {
+			name = "order_grid"
+			position = { x = -350 y = 16 }
+			size = { width = 564 height = 500 }
+			slotsize = { width = 150 height = 40 }
+			orientation = UPPER_RIGHT
+			max_slots_horizontal = 1
+		
+		}
+
+	}
+
+	containerWindowType = {
+		name = "menu_entry"
+
+		buttonType = {
+			name = "menu_entry_button"
+			quadTextureSprite ="GFX_button_148x34"	
+			buttonText = "[This.GetMenuItem]"
+			buttonFont = "hoi_20b"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			oversound = ui_menu_over
+			shortcut = "RETURN"
+		}
+	}
+
+	containerWindowType = {
+		name = "order_entry"
+
+		instantTextboxType = {
+			name = "order_entry_button"	
+			text = "[This.GetMenuItem]"
+			font = "hoi_20b"
+			Orientation = "UPPER_LEFT"
+		}
+	}
+}
