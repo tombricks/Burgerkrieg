@@ -2,6 +2,9 @@ on_actions = {
 	on_startup = {
 		effect = {
 			every_country = {
+			   set_variable = { burgerking_influence = 50 }
+			   set_variable = { mcdonalds_influence = 50 }
+			   
                             add_to_array = { Menu = 0 } # Big Mac
                             add_to_array = { Menu_Price = 3.29 }
                             add_to_array = { Menu_Kcal = 550 }
