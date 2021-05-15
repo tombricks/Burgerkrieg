@@ -1,0 +1,8 @@
+BurgerkriegTargetedDecisions = {
+  visible = {
+      always = yes
+  }
+  allowed = {
+    always = yes
+  }
+}
