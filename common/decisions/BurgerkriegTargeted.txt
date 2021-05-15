@@ -1,0 +1,80 @@
+BurgerkriegTargetedDecisions = {
+	Burgerkrieg_Target_Decisions_build_burgerking = {
+		available = {
+			always = yes
+		}
+		state_target = yes
+	
+		visible = {
+		 always = yes
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+			}
+		}
+		cost = 10
+		days_remove = 10 
+		on_map_mode = map_and_decisions_view
+		ai_will_do = {
+		  factor = 20
+		  modifier = {
+			has_war = yes
+			factor = 0
+		  }
+		}
+		remove_effect = {
+		 THIS.owner = {
+			 add_to_variable = {
+				 burgerking_influence = 5
+			 }
+		 }
+		 THIS = {
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+	Burgerkrieg_Target_Decisions_build_mcdonalds = {
+		available = {
+			always = yes
+		}
+		state_target = yes
+	
+		visible = {
+		 always = yes
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+			}
+		}
+		cost = 10
+		days_remove = 10 
+		on_map_mode = map_and_decisions_view
+		ai_will_do = {
+		  factor = 20
+		  modifier = {
+			has_war = yes
+			factor = 0
+		  }
+		}
+		remove_effect = {
+		 THIS.owner = {
+			 add_to_variable = {
+				 mcdonalds_influence = 5
+			 }
+		 }
+		 THIS = {
+			 add_building_construction = {
+				 type = arms_factory
+				 level = 1
+				 instant_build = yes
+			 }
+		 }
+		}
+	}
+}
